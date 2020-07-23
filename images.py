@@ -4,7 +4,8 @@ from PIL import Image
 from io import BytesIO
 import os
 
-def StartSearch():
+
+def startSearch():
     search = input("Search for:")
     params = {"q": search}
     dir_name = search.replace(" ", "_").lower()
@@ -26,8 +27,7 @@ def StartSearch():
         except:
             print("Could not save an image")
 
-    StartSearch()
-
-StartSearch()
+    startSearch()
 
 
+startSearch()
